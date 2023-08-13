@@ -17,5 +17,9 @@ git-hash export-subst
 /.gitignore         export-ignore
 /test               export-ignore
 
-# avoid merge conflicts in CHANGELOG
+# Avoid merge conflicts in CHANGELOG
 /CHANGELOG.md		merge=union
+
+# Reduce Git Diff Churn 
+flake.lock    linguist-generated=true merge=binary
+Cargo.lock    linguist-generated=true merge=binary
